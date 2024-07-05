@@ -20,7 +20,7 @@ perl ~/data/bin/simuG/simuG.pl -refseq ../genome.fa -snp_count 10000 -indel_coun
 perl ~/data/bin/simuG/simuG.pl -refseq ../genome.fa -snp_count 10000 -indel_count 10000 -snp_model SPRET_EiJ.SNP_INDEL_model.SNP_model.txt -indel_model SPRET_EiJ.SNP_INDEL_model.INDEL_model.txt -prefix  mm10.10000snp.10000indel.SPRET_EiJ.model  -seed 1785035518 -coding_partition_for_snp_simulation coding -gene_gff Mus_musculus.GRCm38.102.chr.gff3.gz
 ```
 
-# Generate sim genome for read generation
+### Generate sim genome for read generation
 
 half homozygote mutations / half heterozygote mutations  
 ```
@@ -40,9 +40,9 @@ pblat Homo_sapiens_assembly38.fasta.2bit ../w-Wessim/real_wes_reads_probes.fa bl
 sbatch --time=3-00:00:00 --mem=64g --cpus-per-task=8 run_pblast.sh
 ```
 
-### =======================================================================================================
+### ==============
 ### Using SimuSCoP
-### =======================================================================================================
+### ==============
 
 ### Calling SNPs and INDELs from original WES data 
 ```
